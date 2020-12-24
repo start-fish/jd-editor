@@ -7,7 +7,7 @@ install:
 script:
 - echo "skip"
 deploy:
-  skip_existing: true
+  skip_existing: false
   provider: pypi
   user: __token__
   password:
