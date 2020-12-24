@@ -166,8 +166,8 @@ def run_web(debug=False, port=17310, open_browser=False, force_quit=False):
         else:
             sys.exit(f"Another weditor({version}) is already running")
 
-    if open_browser:
-        webbrowser.open(f'http://localhost:{port}', new=2)
+    # if open_browser:
+        # webbrowser.open(f'http://localhost:{port}', new=2)
 
     application = make_app({
         'static_path': os.path.join(__dir__, 'static'),
